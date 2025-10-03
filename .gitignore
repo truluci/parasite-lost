@@ -1,0 +1,72 @@
+# Unity project folders (generalized for any folder)
+*/[Ll]ibrary/
+*/[Tt]emp/
+*/[Oo]bj/
+*/[Bb]uild/
+*/[Bb]uilds/
+*/[Ll]ogs/
+*/[Uu]ser[Ss]ettings/
+*/MemoryCaptures/
+*/Recordings/
+*/sysinfo.txt
+
+# IDE/Editor files
+**/.idea/
+*/.vscode/
+*/.vs/
+*/.gradle/
+.DS_Store
+
+# Unity crash files
+*.log
+*.tmp
+*.pidb
+*.pdb
+*.mdb
+*.opendb
+*.booproj
+*.suo
+*.svd
+*.csproj
+*.unityproj
+*.sln
+*.user
+*.userprefs
+*.VC.db
+*.blend1
+*.blend1.meta
+
+# Unity generated meta files
+*.pidb.meta
+*.pdb.meta
+*.mdb.meta
+
+# Build artifacts
+*.apk
+*.aab
+*.unitypackage
+*.unitypackage.meta
+*.app
+
+# JetBrains Rider
+*/Assets/Plugins/Editor/JetBrains*
+
+# Asset Store Tools
+# */Assets/AssetStoreTools*
+
+# Addressables
+*/Assets/AddressableAssetsData/*/*.bin*
+
+# StreamingAssets
+*/Assets/StreamingAssets/aa.meta
+*/Assets/StreamingAssets/aa/*
+
+# Visual Scripting
+*/Assets/Unity.VisualScripting.Generated/VisualScripting.Flow/UnitOptions.db
+*/Assets/Unity.VisualScripting.Generated/VisualScripting.Flow/UnitOptions.db.meta
+*/Assets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers
+*/Assets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers.meta
+
+# ExportedObj
+*/ExportedObj/
+*/.consulo/
