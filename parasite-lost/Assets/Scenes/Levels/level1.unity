@@ -315,6 +315,63 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 10c8a31e4f528814aaf3d63f97e41e77, type: 3}
+--- !u!1 &258792542 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4578306362886513029, guid: a26c43fa956adac4c88116a956435fd3, type: 3}
+  m_PrefabInstance: {fileID: 491913845139566149}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &258792546
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 258792542}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c21dfdb81435e4148bd9836ebd413804, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fishSize: 0
+  possessionDifficulty: 1
+  lifespanBonus: 5
+  spriteRenderer: {fileID: 0}
+--- !u!58 &258792547
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 258792542}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0.21133333}
+  m_Radius: 2
 --- !u!1001 &325464831
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2929,7 +2986,13 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4578306362886513029, guid: a26c43fa956adac4c88116a956435fd3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 258792547}
+    - targetCorrespondingSourceObject: {fileID: 4578306362886513029, guid: a26c43fa956adac4c88116a956435fd3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 258792546}
   m_SourcePrefab: {fileID: 100100000, guid: a26c43fa956adac4c88116a956435fd3, type: 3}
 --- !u!1001 &6718401249794733053
 PrefabInstance:
