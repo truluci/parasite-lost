@@ -28,6 +28,11 @@ public class ParasiteMovement : MonoBehaviour
 
     void Update()
     {
+        if (!IsPlayable())
+        {
+            inputVector = Vector2.zero;
+            return;
+        }
         inputVector = ReadInput();
 
         if (faceMovementDirection && inputVector.sqrMagnitude > 0.001f)
@@ -49,6 +54,12 @@ public class ParasiteMovement : MonoBehaviour
 
     void FixedUpdate()
     {
+        if (!IsPlayable())
+        {
+            if (rb.linearVelocity != Vector2.zero)
+                rb.linearVelocity = Vector2.zero;
+            return;
+        }
         Vector2 velocity = inputVector * moveSpeed;
         rb.linearVelocity = velocity;
     }
@@ -94,5 +105,12 @@ public class ParasiteMovement : MonoBehaviour
     public void SetVelocity(Vector2 newVelocity)
     {
         rb.linearVelocity = newVelocity;
+    }
+
+    bool IsPlayable()
+    {
+        var gm = ParasiteLost.Managers.GameManager.Instance;
+        if (gm == null) return true; // fallback: allow movement if no manager yet
+        return gm.currentState == ParasiteLost.Managers.GameManager.GameState.Playing;
     }
 }

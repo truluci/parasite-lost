@@ -14,6 +14,18 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Levels/level3.unity
     guid: 91542a3bf3ecadd489a0fcca7bb8e37d
+  - enabled: 1
+    path: Assets/Scenes/MainMenu/main.unity
+    guid: f5030920a6444c74c981d61c9455a5f9
+  - enabled: 1
+    path: Assets/Scenes/RhythmBattles/easy battle.unity
+    guid: 53bd7a8fd8ffa6647bb869f135996e9b
+  - enabled: 1
+    path: Assets/Scenes/RhythmBattles/hard battle.unity
+    guid: e4e0603f8eb9e4244b839358bb94d39c
+  - enabled: 1
+    path: Assets/Scenes/RhythmBattles/medium battle.unity
+    guid: 3221f402b5875aa4aa026cbbf81d9b55
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
