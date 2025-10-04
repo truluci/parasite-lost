@@ -29,7 +29,7 @@ namespace ParasiteLost.Managers
             {
                 if (instance == null)
                 {
-                    instance = FindObjectOfType<GameManager>();
+                    instance = FindFirstObjectByType<GameManager>();
                 }
                 return instance;
             }
