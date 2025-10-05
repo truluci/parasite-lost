@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3492326842708361139
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2852420042943947063}
+  - component: {fileID: 1763246002533070526}
+  m_Layer: 0
+  m_Name: RhythmGameController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2852420042943947063
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3492326842708361139}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.00847, y: -0.00962, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1763246002533070526
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3492326842708361139}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6439acecfe8c5a46b1a7ebdd310ec59, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitLineTransform: {fileID: 0}
+  healthUI: {fileID: 0}
+  backgroundMusicSource: {fileID: 0}
+  hitSuccessSound: {fileID: 8300000, guid: 7f7d024ecea2d954ca20f2b674938a92, type: 3}
+  hitMissSound: {fileID: 8300000, guid: 5860f7b0aa0955f46a334d57f973a6ac, type: 3}
+  sfxAudioSource: {fileID: 0}
+  glitchPrefab: {fileID: 3366664443312861907, guid: 3101405d236814e4a9a8167120605103, type: 3}
+  spawnPoint: {fileID: 0}
+  spawnInterval: 2
+  glitchMoveSpeed: 5
+  hitTolerance: 0.5
+  battleDuration: 40

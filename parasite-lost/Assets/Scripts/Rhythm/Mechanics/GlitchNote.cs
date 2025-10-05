@@ -74,7 +74,7 @@ namespace ParasiteLost.Rhythm.Mechanics
             }
             
             // Play hit effect or animation here if needed
-            Debug.Log($"Glitch hit with accuracy: {CalculateHitAccuracy()}");
+            // Debug.Log($"Glitch hit with accuracy: {CalculateHitAccuracy()}");
             
             // Destroy the glitch
             Destroy(gameObject);

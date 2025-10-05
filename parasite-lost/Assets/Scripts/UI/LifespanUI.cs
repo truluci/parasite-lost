@@ -42,7 +42,16 @@ namespace ParasiteLost.UI
             {
                 lifespanText.fontSize = fontSize;
                 lifespanText.color = normalColor;
-                lifespanText.text = "5"; // Set initial text
+                
+                // Show actual starting lifespan instead of hardcoded value
+                if (parasiteController != null)
+                {
+                    lifespanText.text = Mathf.CeilToInt(parasiteController.currentLifespan).ToString();
+                }
+                else
+                {
+                    lifespanText.text = "5"; // Fallback if parasite not found yet
+                }
             }
             
             // Make sure the UI is visible initially and stays visible
@@ -90,9 +99,9 @@ namespace ParasiteLost.UI
             // Update text with countdown
             if (lifespanText != null)
             {
-                // Show countdown from 5 to 0
+                // Show actual lifespan countdown (no longer capped at 5)
                 int countdown = Mathf.CeilToInt(currentLifespan);
-                countdown = Mathf.Clamp(countdown, 0, 5);
+                countdown = Mathf.Max(countdown, 0); // Only prevent negative values
                 lifespanText.text = countdown.ToString();
             }
             

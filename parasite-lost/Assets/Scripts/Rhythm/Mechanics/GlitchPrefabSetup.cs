@@ -64,7 +64,7 @@ namespace ParasiteLost.Rhythm.Mechanics
             {
                 Rigidbody2D rb = gameObject.AddComponent<Rigidbody2D>();
                 rb.gravityScale = 0f; // Glitches shouldn't fall
-                rb.isKinematic = true; // Movement is controlled by script
+                rb.bodyType = RigidbodyType2D.Kinematic; // Movement is controlled by script
             }
             
             Debug.Log($"Glitch prefab '{gameObject.name}' setup completed!");

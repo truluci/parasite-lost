@@ -28,19 +28,38 @@ namespace ParasiteLost.Core.Player
                 gameObject.tag = parasiteTag;
             }
             
-            // Always initialize lifespan to baseLifespan on start
-            currentLifespan = baseLifespan;
-            hasDied = false;
-            
-            // Get managers
+            // Get managers first
             gameManager = GameManager.Instance;
             gameStateManager = GameStateManager.Instance;
+            
+            // Only initialize lifespan if no saved state exists
+            if (gameStateManager == null || gameStateManager.currentLevelState == null || !gameStateManager.isInRhythmBattle)
+            {
+                currentLifespan = baseLifespan;
+                Debug.Log($"[ParasiteController] Initialized lifespan to base value: {baseLifespan}");
+            }
+            else
+            {
+                Debug.Log($"[ParasiteController] Skipping lifespan initialization - GameStateManager will restore it");
+            }
+            
+            hasDied = false;
         }
         
         private void OnEnable()
         {
-            // Ensure lifespan is reset when object is enabled (after scene reload)
-            currentLifespan = baseLifespan;
+            // Only reset lifespan if no GameStateManager with saved state
+            var gsm = GameStateManager.Instance;
+            if (gsm == null || gsm.currentLevelState == null)
+            {
+                currentLifespan = baseLifespan;
+                Debug.Log($"[ParasiteController] OnEnable: Reset lifespan to base value");
+            }
+            else
+            {
+                Debug.Log($"[ParasiteController] OnEnable: Preserving lifespan for state restoration");
+            }
+            
             hasDied = false;
         }
         
@@ -61,7 +80,7 @@ namespace ParasiteLost.Core.Player
             // Movement is handled by ParasiteMovement script
             // HandleMovement(); // Disabled to avoid conflict
             
-            SaveState();
+            // SaveState(); // Removed to prevent spammy logging - state is saved when needed
         }
         
         private void UpdateLifespan()

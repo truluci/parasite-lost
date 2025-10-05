@@ -66,6 +66,23 @@ namespace ParasiteLost.Core.Hosts
             // Check if the parasite (player) is interacting with this fish
             if (other.CompareTag("Player"))
             {
+                var gameStateManager = ParasiteLost.Managers.GameStateManager.Instance;
+                
+                // Check if fish interactions are on cooldown
+                if (gameStateManager != null && gameStateManager.AreFishInteractionsOnCooldown())
+                {
+                    Debug.Log($"Fish interactions on cooldown - ignoring {fishSize} fish");
+                    return;
+                }
+                
+                // Check if this fish has already been interacted with
+                string fishId = GetInstanceID().ToString();
+                if (gameStateManager != null && gameStateManager.HasFishBeenInteracted(fishId))
+                {
+                    Debug.Log($"Fish {fishSize} already interacted with - skipping battle");
+                    return;
+                }
+                
                 Debug.Log($"Parasite entered {fishSize} fish interaction zone!");
                 StartRhythmBattle();
             }

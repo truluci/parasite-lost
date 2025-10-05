@@ -168,7 +168,7 @@ namespace ParasiteLost.Rhythm.Mechanics
                 return;
             }
             
-            Debug.Log($"Spawning glitch at position: {spawnPoint.position}");
+            // Debug.Log($"Spawning glitch at position: {spawnPoint.position}");
             
             GameObject glitchObj = Instantiate(glitchPrefab, spawnPoint.position, Quaternion.identity);
             GlitchNote glitch = glitchObj.GetComponent<GlitchNote>();
@@ -187,7 +187,7 @@ namespace ParasiteLost.Rhythm.Mechanics
             activeGlitches.Add(glitch);
             totalGlitchesSpawned++;
             
-            Debug.Log($"Glitch spawned successfully! Total: {totalGlitchesSpawned}, Position: {glitchObj.transform.position}");
+            // Debug.Log($"Glitch spawned successfully! Total: {totalGlitchesSpawned}, Position: {glitchObj.transform.position}");
         }
         
         private void AttemptHit()
@@ -233,7 +233,7 @@ namespace ParasiteLost.Rhythm.Mechanics
         public void OnGlitchHit(float accuracy)
         {
             successfulHits++;
-            Debug.Log($"Glitch hit successfully! Accuracy: {accuracy:F2}");
+            // Debug.Log($"Glitch hit successfully! Accuracy: {accuracy:F2}");
             
             // Optionally provide bonus points for high accuracy
             if (accuracy > 0.9f)
@@ -267,7 +267,7 @@ namespace ParasiteLost.Rhythm.Mechanics
                 backgroundMusicSource.PlayOneShot(hitSuccessSound);
             }
             
-            Debug.Log("Hit Success!");
+            // Debug.Log("Hit Success!");
         }
         
         private void PlayHitMissSound()
@@ -283,7 +283,7 @@ namespace ParasiteLost.Rhythm.Mechanics
                 backgroundMusicSource.PlayOneShot(hitMissSound);
             }
             
-            Debug.Log("Hit Miss!");
+            // Debug.Log("Hit Miss!");
         }
         
         private void StartBattle()
@@ -333,23 +333,31 @@ namespace ParasiteLost.Rhythm.Mechanics
         
         private void ReturnToPreviousScene()
         {
+            float accuracy = totalGlitchesSpawned > 0 ? (float)successfulHits / totalGlitchesSpawned : 0f;
+            bool battleWon = healthUI != null ? healthUI.HasHeartsRemaining() : true;
+            
+            Debug.Log($"[RhythmGameController] Returning to previous scene. Battle won: {battleWon}, Hearts remaining: {(healthUI != null ? healthUI.GetCurrentHearts() : 0)}");
+            
             // Use the existing battle result handler
             var battleResultHandler = RhythmBattleResultHandler.Instance;
             if (battleResultHandler != null)
             {
-                float accuracy = totalGlitchesSpawned > 0 ? (float)successfulHits / totalGlitchesSpawned : 0f;
-                bool battleWon = healthUI != null ? healthUI.HasHeartsRemaining() : true;
+                Debug.Log($"[RhythmGameController] Using RhythmBattleResultHandler with accuracy: {accuracy:F2}");
                 battleResultHandler.OnRhythmGameComplete(accuracy);
             }
             else
             {
-                Debug.LogError("RhythmBattleResultHandler not found!");
+                Debug.LogError("[RhythmGameController] RhythmBattleResultHandler not found! Using fallback.");
                 // Fallback to direct scene management
                 var gameManager = GameManager.Instance;
                 if (gameManager != null)
                 {
-                    bool battleWon = healthUI != null ? healthUI.HasHeartsRemaining() : true;
+                    Debug.Log($"[RhythmGameController] Using GameManager fallback with battleWon: {battleWon}");
                     gameManager.EndRhythmBattle(battleWon);
+                }
+                else
+                {
+                    Debug.LogError("[RhythmGameController] GameManager also not found! Cannot return to scene.");
                 }
             }
         }

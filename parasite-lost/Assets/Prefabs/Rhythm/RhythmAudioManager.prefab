@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4760578181468372267
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5595934907525061970}
+  - component: {fileID: 1742167101397504372}
+  m_Layer: 0
+  m_Name: RhythmAudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5595934907525061970
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4760578181468372267}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.00847, y: -0.00962, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1742167101397504372
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4760578181468372267}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81bebf140aea44644bddf20b3e2a7034, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  battleTheme: {fileID: 0}
+  musicVolume: 0.7
+  hitSuccessSounds: []
+  hitMissSounds:
+  - {fileID: 8300000, guid: 5860f7b0aa0955f46a334d57f973a6ac, type: 3}
+  battleStartSound: {fileID: 0}
+  battleEndSound: {fileID: 0}
+  heartLostSound: {fileID: 0}
+  musicAudioSource: {fileID: 0}
+  sfxAudioSource: {fileID: 0}
+  sfxVolume: 0.8
+  randomizePitch: 1
+  pitchVariation: 0.1

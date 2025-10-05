@@ -90,18 +90,8 @@ namespace ParasiteLost.Managers
         
         private void HandleBattleWin()
         {
-            // Mark the fish as successfully interacted with
-            if (gameStateManager?.currentInteractingFish != null)
-            {
-                var fish = gameStateManager.currentInteractingFish;
-                var fishId = fish.GetInstanceID().ToString();
-                gameStateManager.MarkFishAsInteracted(fishId);
-                
-                // Mark fish as no longer interactable
-                fish.OnPossessed();
-                
-                Debug.Log($"Successfully possessed {fish.fishSize} fish!");
-            }
+            // Lifespan bonus and fish marking is now handled in GameStateManager.EndRhythmBattle()
+            Debug.Log("Battle won - lifespan bonus will be applied when returning to level");
         }
         
         private void HandleBattleLoss()
@@ -170,7 +160,19 @@ namespace ParasiteLost.Managers
         public void OnRhythmGameComplete(float finalAccuracy)
         {
             UpdateScore(finalAccuracy);
-            EndBattle(finalAccuracy >= scoreThreshold);
+            // Battle is won if player still has hearts remaining (not based on accuracy)
+            var gameStateManager = GameStateManager.Instance;
+            bool battleWon = gameStateManager != null && gameStateManager.currentInteractingFish != null;
+            
+            // Check if health UI indicates hearts remaining
+            var healthUI = FindFirstObjectByType<ParasiteLost.Rhythm.UI.RhythmHealthUI>();
+            if (healthUI != null)
+            {
+                battleWon = healthUI.HasHeartsRemaining();
+            }
+            
+            Debug.Log($"[RhythmBattleResultHandler] Battle complete. Accuracy: {finalAccuracy:F2}, Battle won: {battleWon}");
+            EndBattle(battleWon);
         }
     }
 }

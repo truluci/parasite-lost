@@ -1,0 +1,481 @@
+fileFormatVersion: 2
+guid: e9778180782863a45a827f5cecbc9692
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6168854644762530216
+    second: gtich_kareler-table-512-512_r1_c17_processed_by_imagy_0
+  - first:
+      213: 1962162012344710379
+    second: gtich_kareler-table-512-512_r1_c17_processed_by_imagy_1
+  - first:
+      213: 1623971152370623625
+    second: gtich_kareler-table-512-512_r1_c17_processed_by_imagy_2
+  - first:
+      213: -7560178711690785452
+    second: gtich_kareler-table-512-512_r1_c17_processed_by_imagy_3
+  - first:
+      213: -1495364499003512297
+    second: gtich_kareler-table-512-512_r1_c17_processed_by_imagy_4
+  - first:
+      213: 4367441921123774526
+    second: gtich_kareler-table-512-512_r1_c17_processed_by_imagy_5
+  - first:
+      213: 1988574367105790539
+    second: gtich_kareler-table-512-512_r1_c17_processed_by_imagy_6
+  - first:
+      213: -4262600622540960116
+    second: gtich_kareler-table-512-512_r1_c17_processed_by_imagy_7
+  - first:
+      213: 1520633560291021811
+    second: gtich_kareler-table-512-512_r1_c17_processed_by_imagy_8
+  - first:
+      213: -9137544494747459259
+    second: gtich_kareler-table-512-512_r1_c17_processed_by_imagy_9
+  - first:
+      213: -1735963713908445015
+    second: gtich_kareler-table-512-512_r1_c17_processed_by_imagy_10
+  - first:
+      213: 2351812164119257650
+    second: gtich_kareler-table-512-512_r1_c17_processed_by_imagy_11
+  - first:
+      213: 7113199177780480001
+    second: gtich_kareler-table-512-512_r1_c17_processed_by_imagy_12
+  - first:
+      213: 2136592036711171892
+    second: gtich_kareler-table-512-512_r1_c17_processed_by_imagy_13
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 500
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: gtich_kareler-table-512-512_r1_c17_processed_by_imagy_0
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 382
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a1d61c8d9c2c9550800000000000000
+      internalID: 6168854644762530216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gtich_kareler-table-512-512_r1_c17_processed_by_imagy_1
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 382
+        width: 22
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be4729944fffa3b10800000000000000
+      internalID: 1962162012344710379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gtich_kareler-table-512-512_r1_c17_processed_by_imagy_2
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 385
+        width: 20
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 984688ea821898610800000000000000
+      internalID: 1623971152370623625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gtich_kareler-table-512-512_r1_c17_processed_by_imagy_3
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 382
+        width: 20
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45d433b6489d41790800000000000000
+      internalID: -7560178711690785452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gtich_kareler-table-512-512_r1_c17_processed_by_imagy_4
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 184
+        width: 40
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71a6a2339e56f3be0800000000000000
+      internalID: -1495364499003512297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gtich_kareler-table-512-512_r1_c17_processed_by_imagy_5
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 182
+        width: 61
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e307bbd99454c9c30800000000000000
+      internalID: 4367441921123774526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gtich_kareler-table-512-512_r1_c17_processed_by_imagy_6
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 81
+        width: 438
+        height: 303
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b42b9c8d9d5d89b10800000000000000
+      internalID: 1988574367105790539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gtich_kareler-table-512-512_r1_c17_processed_by_imagy_7
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 227
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8e461a615338d4c0800000000000000
+      internalID: -4262600622540960116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gtich_kareler-table-512-512_r1_c17_processed_by_imagy_8
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 181
+        width: 29
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f31faa9a206a1510800000000000000
+      internalID: 1520633560291021811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gtich_kareler-table-512-512_r1_c17_processed_by_imagy_9
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 211
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 541604fd1bbe03180800000000000000
+      internalID: -9137544494747459259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gtich_kareler-table-512-512_r1_c17_processed_by_imagy_10
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 159
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a0f481233e98e7e0800000000000000
+      internalID: -1735963713908445015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gtich_kareler-table-512-512_r1_c17_processed_by_imagy_11
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 171
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23265cce3b053a020800000000000000
+      internalID: 2351812164119257650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gtich_kareler-table-512-512_r1_c17_processed_by_imagy_12
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 61
+        width: 53
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 108c43007f827b260800000000000000
+      internalID: 7113199177780480001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gtich_kareler-table-512-512_r1_c17_processed_by_imagy_13
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 82
+        width: 68
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43709122323b6ad10800000000000000
+      internalID: 2136592036711171892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      gtich_kareler-table-512-512_r1_c17_processed_by_imagy_0: 6168854644762530216
+      gtich_kareler-table-512-512_r1_c17_processed_by_imagy_1: 1962162012344710379
+      gtich_kareler-table-512-512_r1_c17_processed_by_imagy_10: -1735963713908445015
+      gtich_kareler-table-512-512_r1_c17_processed_by_imagy_11: 2351812164119257650
+      gtich_kareler-table-512-512_r1_c17_processed_by_imagy_12: 7113199177780480001
+      gtich_kareler-table-512-512_r1_c17_processed_by_imagy_13: 2136592036711171892
+      gtich_kareler-table-512-512_r1_c17_processed_by_imagy_2: 1623971152370623625
+      gtich_kareler-table-512-512_r1_c17_processed_by_imagy_3: -7560178711690785452
+      gtich_kareler-table-512-512_r1_c17_processed_by_imagy_4: -1495364499003512297
+      gtich_kareler-table-512-512_r1_c17_processed_by_imagy_5: 4367441921123774526
+      gtich_kareler-table-512-512_r1_c17_processed_by_imagy_6: 1988574367105790539
+      gtich_kareler-table-512-512_r1_c17_processed_by_imagy_7: -4262600622540960116
+      gtich_kareler-table-512-512_r1_c17_processed_by_imagy_8: 1520633560291021811
+      gtich_kareler-table-512-512_r1_c17_processed_by_imagy_9: -9137544494747459259
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
