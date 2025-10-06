@@ -21,11 +21,11 @@ EditorBuildSettings:
     path: Assets/Scenes/RhythmBattles/easy battle.unity
     guid: 53bd7a8fd8ffa6647bb869f135996e9b
   - enabled: 1
-    path: Assets/Scenes/RhythmBattles/hard battle.unity
-    guid: e4e0603f8eb9e4244b839358bb94d39c
-  - enabled: 1
     path: Assets/Scenes/RhythmBattles/medium battle.unity
     guid: 3221f402b5875aa4aa026cbbf81d9b55
+  - enabled: 0
+    path: Assets/Scenes/RhythmBattles/hard battle.unity
+    guid: e4e0603f8eb9e4244b839358bb94d39c
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
