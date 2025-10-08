@@ -55,7 +55,7 @@ Space – Interact during rhythm battle
 ## Team
 
 - **Programming:** [Mevlüt](https://github.com/truluci)    
-- **Art:** Yalın, Deniz 
+- **Art:** [Yalın](https://www.instagram.com/puregangyo/), [Deniz](https://www.instagram.com/d.art04/) 
 - **Sound & Music:** [Semih](https://github.com/semosemih) 
 
 ---
